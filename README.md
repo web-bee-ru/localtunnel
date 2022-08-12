@@ -1,4 +1,4 @@
-# localtunnel
+# @web-bee-ru/localtunnel
 
 localtunnel exposes your localhost to the world for easy testing and sharing! No need to mess with DNS or deploy just to have others test out your changes.
 
@@ -7,7 +7,7 @@ Great for working with browser testing tools like browserling or external api ca
 ## Quickstart
 
 ```
-npx localtunnel --port 8000
+npx @web-bee-ru/localtunnel --port 8000
 ```
 
 ## Installation
@@ -29,7 +29,7 @@ yarn add localtunnel
 When localtunnel is installed globally, just use the `lt` command to start the tunnel.
 
 ```
-lt --port 8000
+wblt --port 8000
 ```
 
 Thats it! It will connect to the tunnel server, setup the tunnel, and tell you what url to use for your testing. This url will remain active for the duration of your session; so feel free to share it with others for happy fun time!
@@ -38,7 +38,7 @@ You can restart your local server all you want, `lt` is smart enough to detect t
 
 ### Arguments
 
-Below are some common arguments. See `lt --help` for additional arguments
+Below are some common arguments. See `wblt --help` for additional arguments
 
 - `--subdomain` request a named subdomain on the localtunnel server (default is random characters)
 - `--local-host` proxy to a hostname other than localhost
@@ -58,7 +58,7 @@ Provide basic auth token if your web server requires authorization.
 Save the credentials with <username> and <password> for specified host to the `~/.ltrc` file. If no host is specified, the default host will be used (`https://localtunnel.me`).
 
 ```
-lt login https://lt.example.com
+wblt login https://lt.example.com
 ```
 
 ### logout
@@ -66,7 +66,7 @@ lt login https://lt.example.com
 Remove the credentials for specified host from the `~/.ltrc` file.
 
 ```
-lt logout https://lt.example.com
+wblt logout https://lt.example.com
 ```
 
 ## API
