@@ -8,7 +8,7 @@ const localtunnel = require('../localtunnel');
 const config = require('../lib/config');
 const { version } = require('../package');
 
-const defaultHost = 'https://localtunnel.me';
+const defaultHost = 'https://lt.web-bee.ru';
 
 const { argv } = yargs
   .usage('Usage: lt --port [num] <options>')
